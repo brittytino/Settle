@@ -4,7 +4,7 @@ import Logo from '../img/settle-high-resolution-logo.png';
 
 const navLinks = [
   { name: 'Home', href: '/' },
-  { name: 'About', href: '/about' },
+  { name: 'About', href: '/' },
   { name: 'Services', href: '#services' },
   { name: 'Contact', href: '#contact' },
   { name: 'Translation', href: '/translate' },
