@@ -3,13 +3,13 @@ import homeImg from '../img/refuge1.jpeg';
 
 const Hero = () => {
   return (
-    <div className="flex flex-col md:flex-row items-center bg-[#183D24] text-[#C0FF00] p-6 md:py-14 md:px-20">
+    <div className="flex flex-col md:flex-row items-center bg-[#183D24] text-[#C0FF00] p-6 md:py-20 md:px-20">
       {/* Left Side Content */}
       <div className="flex-1 text-center md:text-left md:pr-8 ">
         <h1 className="text-3xl md:text-5xl font-bold mb-4">
           Empowering Refugees and Immigrants to Build a New Life
         </h1>
-        <p className="text-lg md:text-xl mb-10 text-gray-300">
+        <p className="text-lg md:text-xl mb-10 md:mb-20 text-gray-300">
           Access essential services, community support, and employment opportunities—all in one place.
         </p>
         <a 
@@ -25,7 +25,7 @@ const Hero = () => {
         <img
           src={homeImg}
           alt="Empowering Refugees and Immigrants"
-          className="w-64 h-64 md:w-80 md:h-80 object-cover rounded-full border-4 border-[#C0FF00]"
+          className="w-64 h-64 md:w-96 md:h-96 object-cover rounded-full border-4 border-[#C0FF00]"
         />
       </div>
     </div>

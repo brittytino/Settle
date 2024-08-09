@@ -9,6 +9,7 @@ import { auth } from '../firebase-config';
 import Job from './Job';
 import Footer from './Footer';
 import Contact from './contact';
+import LanguageTranslationPage from './TranslatePage';
 
 const Homepage = () => {
   const [isModalOpen, setIsModalOpen] = useState(true); // Open modal on load
@@ -23,6 +24,7 @@ const Homepage = () => {
       <Hero />
       <Services/>
 <Rental/>
+<LanguageTranslationPage/>
 <Job/>
 <Contact/>
 <Footer/>

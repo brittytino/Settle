@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import rentalImg from '../img/rental img.jpg'
 
 const Rental = () => {
   const [location, setLocation] = useState('');
@@ -52,7 +53,8 @@ const Rental = () => {
   };
 
   return (
-    <div className="container mx-auto p-4">
+    <div className="container mx-auto p-4 md:py-20 md:px-20 bg-blue-100 flex gap-10">
+      <div>
       <h1 className="text-3xl font-bold mb-4">Rental Accommodation</h1>
       <p>This rental accommodation service is for refugees and immigrants to book or check accommodation.</p>
       
@@ -207,6 +209,11 @@ const Rental = () => {
           </form>
         </div>
       )}
+    </div>
+
+    <div>
+      <img src={rentalImg} alt="" className=' rounded-md'  />
+    </div>
     </div>
   );
 };

@@ -34,11 +34,11 @@ const LanguageTranslationPage = () => {
 
   return (
     <div className="min-h-screen bg-gray-100 text-gray-900 p-6 flex items-center justify-center">
-      <div className="max-w-5xl w-full bg-white shadow-lg rounded-lg p-8 flex">
+      <div className="w-full max-w-7xl bg-white shadow-lg rounded-lg p-8 flex flex-col md:flex-row">
         
         {/* Left side - Translation Form */}
-        <div className="w-1/2 pr-8">
-          <h1 className="text-3xl font-semibold text-center mb-6">Language Translation Services</h1>
+        <div className="w-full md:w-1/2 md:pr-8">
+          <h1 className="text-2xl md:text-3xl font-semibold text-center mb-6">Language Translation Services</h1>
           <p className="text-center text-gray-700 mb-8">
             Seamless Communication Across Borders. Our services help you overcome language barriers with ease.
           </p>
@@ -101,7 +101,7 @@ const LanguageTranslationPage = () => {
         </div>
 
         {/* Right side - Additional Information */}
-        <div className="w-1/2 pl-8 border-l border-gray-300">
+        <div className="w-full md:w-1/2 mt-8 md:mt-0 md:pl-8 md:border-l border-gray-300">
           <div className="mb-12">
             <h2 className="text-xl font-semibold text-center mb-4">Key Features</h2>
             <ul className="list-disc list-inside text-gray-700">

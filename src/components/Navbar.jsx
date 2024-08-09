@@ -5,8 +5,8 @@ import Logo from '../img/settle-high-resolution-logo.png';
 const navLinks = [
   { name: 'Home', href: '/' },
   { name: 'About', href: '/about' },
-  { name: 'Services', href: '/services' },
-  { name: 'Contact', href: '/contact' },
+  { name: 'Services', href: '#services' },
+  { name: 'Contact', href: '#contact' },
   { name: 'Translation', href: '/translate' },
 ];
 
@@ -14,12 +14,12 @@ const Navbar = ({ onLogout }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-white text-[#183D24] px-20 shadow-md">
-      <div className="container mx-auto flex justify-between items-center">
+    <nav className="bg-white text-[#183D24] px-6 md:px-20 shadow-md">
+      <div className="container mx-auto flex justify-between items-center py-4">
         <Link to="/" className="flex items-center">
-          <img src={Logo} alt="Logo" className="h-24 w-auto" />
+          <img src={Logo} alt="Logo" className="h-12 md:h-24 w-auto" />
         </Link>
-        <div className={`md:flex space-x-6 ${isOpen ? 'block' : 'hidden'}`}>
+        <div className="hidden md:flex space-x-6">
           {navLinks.map((link) => (
             <Link key={link.name} to={link.href} className="hover:text-accent">
               {link.name}
@@ -45,23 +45,30 @@ const Navbar = ({ onLogout }) => {
           </button>
         </div>
       </div>
-      <div className={`md:hidden ${isOpen ? 'block' : 'hidden'}`}>
-        <div className="p-4">
-          {navLinks.map((link) => (
-            <Link key={link.name} to={link.href} className="block py-2 px-4 hover:bg-accent">
-              {link.name}
-            </Link>
-          ))}
-          {onLogout && (
-            <button
-              onClick={onLogout}
-              className="block w-full bg-red-500 text-white py-2 px-4 rounded hover:bg-red-600"
-            >
-              Logout
-            </button>
-          )}
+      {isOpen && (
+        <div className="md:hidden">
+          <div className="flex flex-col items-start p-4">
+            {navLinks.map((link) => (
+              <Link
+                key={link.name}
+                to={link.href}
+                className="block w-full py-2 px-4 hover:bg-accent hover:text-white rounded-md"
+                onClick={() => setIsOpen(false)}
+              >
+                {link.name}
+              </Link>
+            ))}
+            {onLogout && (
+              <button
+                onClick={onLogout}
+                className="block w-full bg-red-500 text-white py-2 px-4 rounded hover:bg-red-600"
+              >
+                Logout
+              </button>
+            )}
+          </div>
         </div>
-      </div>
+      )}
     </nav>
   );
 };

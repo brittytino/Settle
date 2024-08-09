@@ -3,7 +3,7 @@ import contactImg from '../img/34.png'
 
 const Contact = () => {
   return (
-    <div className="flex flex-col md:flex-row px-4 md:px-20 py-10">
+    <div id='contact' className="flex flex-col md:flex-row px-4 md:px-20 py-10">
     
 
       {/* Contact Form */}
