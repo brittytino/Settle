@@ -1,14 +1,17 @@
 import React from 'react';
-import Test from './Test';
 import Services from './Services';
-import Rental from './Rental';
+import Hero from './Hero';
+import Rental from './Rental'
+
+
 
 const Homepage = () => {
   return (
     <div>
-        
+        <Hero/>
       <Services/>
-      <Rental/>
+<Rental/>
+    
 
     </div>
   );
