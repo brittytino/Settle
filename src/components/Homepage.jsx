@@ -1,12 +1,12 @@
-import Test from "./Test"
+import React from 'react';
+import Test from './Test';
 
-const Homepage = () =>{
+const Homepage = () => {
+  return (
+    <div>
+      <Test />
+    </div>
+  );
+};
 
-    return( 
-        <div>
-            <Test/>
-        </div>
-    )
-}
-
-export default Homepage
+export default Homepage;
