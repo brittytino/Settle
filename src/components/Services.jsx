@@ -10,7 +10,6 @@ const ServiceCard = ({ icon, title, description }) => (
     <p className="text-gray-600 text-center">{description}</p>
   </div>
 );
-
 const Services = () => {
   return (
     <div className="container mx-auto px-6 py-12">
@@ -57,31 +56,12 @@ const Services = () => {
         />
         <ServiceCard
           icon={<FaUserCog />}
-          title="Personalized Settings"
-          description="Customize your app experience with notification preferences, language options, and more."
-        />
-      </section>
-
-      <section className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-        <ServiceCard
-          icon={<FaGavel />}
           title="Chat with Legal Support"
           description="Direct communication with legal advisors for immigration issues, asylum applications, or other legal concerns."
         />
       </section>
 
-      <section className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <ServiceCard
-          icon={<FaBriefcase />}
-          title="View Job Details"
-          description="Detailed descriptions of job postings, including requirements, responsibilities, and application procedures."
-        />
-        <ServiceCard
-          icon={<FaBriefcase />}
-          title="Apply for Job"
-          description="Submit resumes and cover letters directly through the app with a streamlined application process."
-        />
-      </section>
+      
     </div>
   );
 };
