@@ -25,7 +25,7 @@ const Rental = () => {
   };
 
   return (
-    <div className="container mx-auto p-6">
+    <div className="container mx-auto p-6 md:px-20">
       <h1 className="text-3xl font-bold mb-4">Rental Accommodation</h1>
       <p className="mb-6 text-gray-700">
         Welcome to our rental accommodation platform designed for refugees and
