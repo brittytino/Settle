@@ -6,6 +6,9 @@ import Hero from './Hero';
 import Rental from './Rental';
 import WelcomeModal from '../components/WelcomeModal';
 import { auth } from '../firebase-config';
+import Job from './Job';
+import Footer from './Footer';
+import Contact from './contact';
 
 const Homepage = () => {
   const [isModalOpen, setIsModalOpen] = useState(true); // Open modal on load
@@ -21,6 +24,8 @@ const Homepage = () => {
       <Services/>
 <Rental/>
 <Job/>
+<Contact/>
+<Footer/>
     
 
       {isModalOpen && user && (
