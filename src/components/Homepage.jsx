@@ -18,8 +18,10 @@ const Homepage = () => {
   return (
     <div>
       <Hero />
-      <Services />
-      <Rental />
+      <Services/>
+<Rental/>
+<Job/>
+    
 
       {isModalOpen && user && (
         <WelcomeModal user={user} onClose={closeModal} />
