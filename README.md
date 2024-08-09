@@ -14,9 +14,6 @@ APIs: Google Maps for location services, AI Translation for multilingual support
 
 
 
-## Live Demo
-
-You can view the live version of the website - https://settle-kgcas.vercel.app/ .
 
 
 ## Features
