@@ -13,7 +13,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-white text-[#183D24]  px-4 shadow-md">
+    <nav className="bg-white text-[#183D24]  px-20 shadow-md">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
         <a href="/" className="flex items-center">
